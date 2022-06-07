@@ -223,7 +223,7 @@ contract ReferenceOrderValidator is
             }
 
             // Increment the filled numerator by the new numerator.
-            filledNumerator += numerator;
+            ++filledNumerator;
 
             // Ensure fractional amounts are below max uint120.
             if (
